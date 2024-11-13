@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="stylesheet" href="./css/styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive comments section</title>
+  </head>
+  <body>
+    <main class="min-h-screen bg-Very-light-gray p-4 md:p-6">
+      <div id="comments" class="max-w-2xl mx-auto space-y-4"></div>
+    
+      <div class="max-w-2xl mx-auto mt-6 p-4 bg-white rounded-lg shadow">
+        <div class="add-comment p-6 bg-white rounded-lg shadow flex items-start space-x-3 mt-4">
+          <img src="./images/avatars/image-juliusomo.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+          <textarea class="flex-1 p-2 border border-gray-300 rounded-lg" rows="2" placeholder="Add a comment..."></textarea>
+          <button class="send-comment px-4 py-2 bg-Moderate-blue hover:bg-opacity-50 text-white rounded-lg">SEND</button>
+        </div>
+      </div>
+
+      <!-- Delete Confirmation Modal -->
+      <div id="deleteModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full">
+          <h2 class="text-lg font-bold text-gray-900">Delete comment</h2>
+          <p class="text-gray-600 mt-2">Are you sure you want to delete this comment? This will remove the comment and can’t be undone.</p>
+          <div class="mt-4 flex justify-between">
+            <button id="cancelDelete" class="px-5 py-2 bg-Grayish-Blue rounded-lg text-white font-semibold">NO, CANCEL</button>
+            <button id="confirmDelete" class="px-5 py-2 bg-Soft-Red text-white rounded-lg font-semibold">YES, DELETE</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
