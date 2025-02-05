@@ -77,10 +77,15 @@ fetch('./data.json')
                 `}
                 </div>
                 </div>
-                <div class="reply-input hidden mt-4 flex items-start space-x-3">
-                  <img src="./images/avatars/image-juliusomo.png" alt="User Avatar" class="w-8 h-8 rounded-full">
-                  <textarea class="flex-1 p-2 border border-gray-300 rounded-lg" rows="2" placeholder="Add a reply..."></textarea>
-                  <button class="send-reply px-4 py-2 bg-Moderate-blue hover:bg-opacity-50 text-white rounded-lg">REPLY</button>
+                <div class="reply-input hidden mt-4 p-6 bg-white rounded-lg shadow flex flex-col md:flex-row items-start space-y-3 md:space-y-0 md:space-x-3">
+                  <div class="hidden md:flex">
+                    <img src="./images/avatars/image-juliusomo.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+                  </div>
+                  <textarea class="flex-1 p-2 border border-gray-300 rounded-lg w-full" rows="2" placeholder="Add a reply..."></textarea>
+                  <div class="flex justify-between items-center w-full md:w-auto">
+                    <img src="./images/avatars/image-juliusomo.png" alt="User Avatar" class="w-8 h-8 rounded-full md:hidden">
+                    <button class="send-reply px-4 py-2 bg-Moderate-blue hover:bg-opacity-50 text-white rounded-lg">REPLY</button>
+                  </div>
                 </div>
         </div>
         <div class="replies"></div>
